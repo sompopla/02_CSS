@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        .image-title {
+            text-align: center;
+        }
+        .image-title img {
+            width: 80%;
+        }
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 20px;
+        }
+        .box {
+            height: auto;
+            padding: 30px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        .box h2 {
+            font-size: 18px;
+            background-color: white;
+        }
+        .box p {
+            font-size: 14px;
+            background-color: white;
+            padding-top: 10px;
+        }
+        .button {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            background-color: black;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 560px) {
+            .image-title {
+                text-align: center;
+            }
+             .image-title img {
+                width: 80%;
+            }
+            .container {
+                grid-template-columns: auto;
+            }
+
+            div > div {
+                min-width: 300px;
+            }         
+        }
+
+        @media only screen and (min-width: 561px) and (max-width: 960px) {
+            .image-title {
+                text-align: center;
+            }
+             .image-title img {
+                width: 80%;
+            }
+            .container {
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 5%;
+            }
+            div > div {
+                min-width: 200px;
+            }         
+        }
+
+        @media only screen and (min-width: 961px) {
+            .container {
+                grid-template-columns: repeat(3, auto);
+                grid-gap: 5%;
+            }
+            .image-title img {
+                text-align: center;
+            }
+            div > div {
+                min-width: 100px;
+                height: auto;
+            }         
+        }
+    </style>
+</head>
+<body>
+    <div class="image-title">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>กาแฟดำ</h2>
+            <p> เป็นการชงด้วยวิธีการหยดน้ำ อาจเป็นแบบให้น้ำซึมหรือแบบเฟรนช์เพรส เสิร์ฟโดยไม่ใส่นม อาจเติมน้ำตาลได้ ผู้คนมักเข้าใจผิดว่ากาแฟดำกับเอสเพรสโซเป็นอย่างเดียวกัน </p>
+            <a class="button" href="#">Read More</a>
+        </div>
+        <div class="box">
+            <h2>เอสเพรสโซ่</h2>
+            <p> คือกาแฟที่มีรสแก่และเข้ม ซึ่งมีวิธีการชงโดยใช้แรงอัดไอน้ำหรือน้ำร้อนผ่านเมล็ดกาแฟคั่วที่บดละเอียด ที่มาของชื่อ เอสเปรสโซ มาจากคำภาษาอิตาลี "espresso" แปลว่า เร่งด่วน เอสเปรสโซเป็นกาแฟที่นิยมมากที่สุดในแถบประเทศยุโรปตอนใต้ </p>
+            <a class="button" href="#">Read More</a>
+        </div>
+        <div class="box">
+            <h2>อเมริกาโน่</h2>
+            <p> คือเครื่องดื่มกาแฟชนิดหนึ่ง ซึ่งมีวิธีการชงโดยเติมน้ำร้อนผสมลงไปในเอสเพรสโซ. การเจือจางเอสเพรสโซซึ่งเป็นกาแฟเข้มข้นด้วยน้ำร้อน ทำให้อเมริกาโนมีความแก่พอ ๆ กับกาแฟธรรมดา แต่มีกลิ่นและรสชาติที่เข้มอันมาจากเอสเพรสโซ </p>
+            <a class="button" href="#">Read More</a>
+        </div>
+        <div class="box">
+            <h2>คาปูชิโน</h2>
+            <p> มีส่วนประกอบหลักคือ เอสเพรสโซ และ นม การชงคาปูชิโนโดยส่วนใหญ่มักมีอัตราส่วนของเอสเพรสโซ 1/3 ส่วน ผสมกับนมสตีม (นมร้อนผ่านไอน้ำ) 1/3 ส่วน และนมตีเป็นโฟมละเอียด 1/3 ส่วนลอยอยู่ด้านบน นอกจากนั้นอาจโรยหน้าด้วยผงซินนามอน</p>
+            <a class="button" href="#">Read More</a>
+        </div>
+        <div class="box">
+            <h2>มอคค่า</h2>
+            <p> มอคค่า (mocha) คือ กาแฟที่มีส่วนผสมของ เอสเพรสโซ่ (esspresso) น้ำนมสด และช็อกโกแลต การชงกาแฟมอคค่า จะใช้เอสเปรสโซ 1/3 ส่วน ผสมกัน น้ำนมร้อน 2/3 ส่วน มีการชงคล้ายกับกาแฟลาเต้ (latte) แตกต่างกันที่มอคค่า จะมีส่วนผสมของช็อกโกแลต </p>
+            <a class="button" href="#">Read More</a>
+        </div>
+        <div class="box">
+            <h2>ลาเต้</h2>
+            <p>  เป็นภาษาอิตาลีแปลว่านม ส่วนในประเทศอื่น จะหมายถึง กาแฟลาเต้ หรือเครื่องดื่มกาแฟที่เตรียมด้วยนมร้อน โดยการเทเอสเปรสโซ 1/3 ส่วน และนมร้อนอีก 2/3 ส่วน ลงในถ้วยพร้อมๆ กัน และจะหยอดโฟมนมหนาประมาณ 1 ซม.</p>
+            <a class="button" href="#">Read More</a>
+        </div>
+    </div>
+</body>
+</html>

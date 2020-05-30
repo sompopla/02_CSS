@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_10</title>
+    <style>
+     .container {
+         margin-top: 40px;
+     }   
+     .color {
+         width: 150px;
+         height: 150px;
+         border: 1px solid #333;
+         border-radius: 20px;
+         background-color: yellow;
+
+         animation: animation-color 5s infinite;
+     }
+     @keyframes animation-color {
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        75% {background-color: green;}
+        100% {background-color: pink;}
+     }
+     .show-hide {
+         width: 300px;
+         height: 40px;
+         margin-top: 30px;
+         border: 1px solid #333;
+         background-color: lightgrey;
+         font-size: 20px;
+         font-weight: 700;
+         text-align: center;
+         opacity: 1;
+
+         animation: animation-sh 4s infinite;
+     }
+     @keyframes animation-sh {
+         0% {opacity: 0;}
+         25% {opacity: 0.5;}
+         50% {opacity: 1;}
+         75% {opacity: 0.5;}
+         100% {opacity: 0;}
+     }
+     .relative {
+         width: 50px;
+         height: 50px;
+         border: 1px solid #333;
+         border-radius: 30px;
+         margin-top: 30px;
+         background-color: black;
+         position: relative;
+
+         animation: animation-relative 5s;
+         animation-iteration-count: 3;
+     }
+     @keyframes animation-relative {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+     }
+    </style>
+</head>
+<body>
+    <p>
+        1.นำ animation ทั้งมารวมกันด้วย shorthand <br>
+        2.ใช้ keyframes เป็น % อย่างน้อย 5 ช่วง <br>
+        3.ให้มีอย่างน้อย 1 animation-iteration-count เป็น infinite <br>
+        4.ให้ทำ animation เปลี่ยนสี <br>
+        5.ให้ทำ animation show, hide <br>
+        6.ให้ทำ animation เคลื่อนที่
+    </p>
+
+    <div class="container">
+        <div class="color"></div>
+        <div class="show-hide">Hell Wold</div>
+        <div class="relative"></div>
+    </div>
+
+</body>
+</html>

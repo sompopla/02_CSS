@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .color {
+        color: black;
+        font-size: 30px;
+        font-weight: 800;
+
+        animation: animation-color 4s infinite;
+    }
+    @keyframes animation-color {
+        0%   {color: red;}
+        25%  {color: yellow;}
+        50%  {color: blue;}
+        100% {color: green;}
+    }
+    .width {
+        width: 150px;
+        background-color: coral;
+        border: 1px solid #fff;
+
+        animation: animation-width 5s infinite;
+    }
+    @keyframes animation-width {
+        0% {width: 200px;}
+        25% {width: 250px;}
+        50% {width: 300px;}
+        75% {width: 350px;}
+        100% {width: 400px;}
+    }
+    .border {
+        width: 200px;
+        border: 3px solid green;
+        text-align: center;
+        
+        animation: animation-border 4s infinite;
+    }
+    @keyframes animation-border {
+        0% {width: 250;}
+        25% {width: 300;}
+        50% {width: 350;}
+        100% {width: 400px;}
+    }
+    .bg-color {
+        width: 300px;
+        height: 30px;
+        background-color: white;
+        padding: 20px auto;
+        text-align: center;
+
+        animation: animation-bg 4s infinite;
+    }
+    @keyframes animation-bg {
+        0% {background-color: #53da53; color: white;}
+        25% {background-color: #585bee; color: white;}
+        50% {background-color: #f8983e; color: white;}
+        100% {background-color: #ee4057; color: white;}
+    }
+    .relative {
+        font-size: 22px;
+        font-weight: 800;
+        color: blue;
+        position: relative;
+
+        animation: animation-relative 5s infinite;
+    }
+    @keyframes animation-relative {
+        from {left: 0;}
+        to {left: 800px;}
+    }
+    .show-hide {
+        font-size: 24px;
+        font-weight: 700;
+        opacity: 1;
+
+        animation: animation-sh 4s infinite;
+    }
+    @keyframes animation-sh {
+        0% {opacity: 0;}
+        25% {opacity: 0.5;}
+        50% {opacity: 1;}
+        100% {opacity: 0.5;}
+        
+    }
+</style>
+<body>
+    <div>
+        <p>
+            1.ลองกำหนด @keyframes แบบ from to <br> 
+            2.ลองกำหนด @keyframes แบบ % <br>
+            3.ลองกำหนด @keyframes แบบ from to <br>
+        </p>
+<br><br>
+        <div class="color">Animation Color</div> <br><br>
+        <div class="width">Animation Width</div> <br><br>
+        <div class="border">Animation Border</div> <br><br>
+        <div class="bg-color">Animation BG-Color</div> <br><br>
+        <div class="relative">Animation Position-Relative</div> <br><br>
+        <div class="show-hide">Animation Show-Hide</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .block {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <th>display value</th>
+            <th>grid</th>
+            <th>flex</th>
+            <th>justify and align</th>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>None</li>
+                    <li>inline</li>
+                    <li>block</li>
+                    <li>inline-block</li>
+                </ol>
+            </td>
+            <td>
+                <div class="block">
+                    <p>
+                        grid คือ การแบ่งพื้นที่ออกเป็นส่วน ๆ พื้นที่หน้าจอจะถูกแบ่งตามเส้นจากบนลงล่าง และจากซ้ายไปขวา
+                    </p>
+                </div>
+            </td>
+            <td>
+                <div class="block">
+                    <p>
+                        flex คือ การออกแบบพื้นที่โดยการจัดเรียงไปแนวนอน หรือแนวตั้ง สามารถย้าย item ต่าง ๆ ได้
+                    </p>
+                </div>
+            </td>
+            <td>
+                <div class="block">
+                    <p>
+                        <b>align</b>  จะเป็นการจัดบรรทัดของข้อความจากขอบซ้ายไปจนถึงขอบด้านขวา จะไม่สามารถขยายขอบได้ ส่วน <b>justify</b> จะทำการจัดข้อความโดยสามารถขยายกรอบของข้อความได้
+                    </p>
+                </div>
+            </td>
+        </tr>     
+    </table>
+
+    <br>
+
+    <table border="1" align="center">
+        <tr>
+            <th>position</th>
+            <th>z-index</th>
+        </tr>
+        <tr>
+            <td>
+                <p>position คือ ตำแหน่งการจัดวางของ css ประกอบไปด้วย</p>
+                <ol>
+                    <li>static</li>
+                    <li>relative</li>
+                    <li>absolute</li>
+                    <li>fixed</li>
+                </ol>
+            </td>
+            <td>
+                <p>
+                    z-index คือ ใช้จัดเรียง element ที่ซ้อนกัน โดยจะมีผลก็ต่อเมื่อมีการใส่ positon ให้กับ element นั้น ๆ <br>
+                    โดยจะจัดเรียงตามค่าตัวเลขที่กำหนด ตั้งแต่เลขบวก จนติดลบ
+                </p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

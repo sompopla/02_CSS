@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            width: 500px;
+            border: 1px solid #333;
+            padding: 10px;
+        }
+        .col-2{
+            width: 200px;
+        }
+        #url {
+            width: 100px;
+        }
+        input[type="text"] {
+            width: 200px;
+        }
+        .setup {
+            background-color: #f0e0e0;
+        }
+        #from, #template, #review, #score {
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td class="col-2"><input type="text" name="t_name"></td>
+                </tr>
+                <tr>
+                    <td>Tab Text :</td>
+                    <td class="col-2"><input type="text" name="tab_text"></td>
+                </tr>
+                <tr>
+                    <td>URL :</td>
+                    <td colspan="2">http://www.wizehive.com/webform/ <input type="text" id="url" name="url"></td>
+                    <td></td>
+                </tr>
+                <tr class="setup">
+                    <td colspan="3"><h3>FORM SETUP</h3></td>
+                </tr>
+                <tr>
+                    <td>Form</td>
+                    <td>
+                        <select name="form" id="from">
+                            <option value="">&nbsp;</option>
+                        </select>
+                    </td>
+                    <td><input type="button" name="edit" value="edit"></td>
+                </tr>
+                <tr>
+                    <td>Logo :</td>
+                    <td><label>no logo uploads</label></td>
+                    <td><input type="button" name="logo" value="upload logo"></td>
+                </tr>
+                <tr>
+                    <td>Template Text :</td>
+                    <td>
+                        <select name="template" id="template">
+                            <option value="English">English</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Review Form :</td>
+                    <td>
+                        <select name="review" id="review">
+                            <option value="Default">Default</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Review Score :</td>
+                    <td>
+                        <select name="score" id="score">
+                            <option value="Rating">Rating</option>
+                        </select>
+                    </td>
+                    <td><input type="button" name="reload" value="Reload Fields"></td>
+                </tr>
+                <tr>
+                    <td>Scoring Type :</td>
+                    <td>
+                        <select name="type" id="type">
+                            <option value="Average">Average</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Max Score :</td>
+                    <td><input type="number" name="score" min="1" max="4" value="4"></td>
+                </tr>
+            </table>
+    
+</body>
+</html>

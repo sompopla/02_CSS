@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_09</title>
+</head>
+<style>
+    .container {
+        margin-top: 60px;
+    }
+    .box-item1 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #333333;
+        background-color: red;
+        position: relative;
+        animation-name: anima-box1;
+        animation-duration: 5s;
+        animation-delay: 0.5s;
+        animation-direction: normal;
+    }
+    @keyframes anima-box1 {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
+    .box-item2 {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        border: 1px solid #333333;
+        background-color: yellow;
+        position: relative;
+        animation-name: anima-box2;
+        animation-duration: 5s;
+        animation-delay: 5.05s;
+        animation-direction: reverse;
+    }
+    @keyframes anima-box2 {
+        0%  {background-color:yellow; left:0px; top:0px;}
+        25%   {background-color:red; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
+    .box-item3 {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        border: 1px solid #333333;
+        background-color: green;
+        position: relative;
+        animation-name: anima-box3;
+        animation-duration: 5s;
+        animation-delay: 10.05s;
+        animation-direction: alternate;
+        animation-iteration-count: 2;
+    }
+    @keyframes anima-box3 {
+        0%  {background-color:green; left:0px; top:0px;}
+        25%   {background-color:red; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:yellow; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
+
+</style>
+<body>
+    <p>
+        1.ให้สร้าง animation ที่มีการใช้ delay และ direction <br>
+        2.กำหนด direction ทั้งสามแบบเพื่อเปรียบเทียบ <br>
+        3.ให้การกำหนดการเคลื่อนจำนวน 5 ครั้ง <br>
+        4.ให้กำหนด keyframes เป็น 5 ช่วง
+    </p>
+    <div class="container">
+        <div class="box-item1"></div>
+        <div class="box-item2"></div>
+        <div class="box-item3"></div>
+    </div>
+</body>
+</html>
